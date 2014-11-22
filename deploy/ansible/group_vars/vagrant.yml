@@ -1,0 +1,7 @@
+---
+# configuration for vagrant
+
+env: staging
+hostname: cth-vagrant
+base_path: /vagrant
+api_fqdn: cth.loc

@@ -1,0 +1,41 @@
+{
+  "name": "piep",
+  "description": "an education package manager",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:piep/piep.git"
+  },
+  "scripts": {
+    "test": "grunt",
+    "configure-hosts-local": "hostile set 127.0.0.1 cth.loc",
+    "configure-hosts-vm": "hostile set 192.168.33.47 cth.loc",
+    "deploy": "ansible-playbook -i deploy/ansible/hosts deploy/ansible/deploy.yml",
+    "deploy-staging": "ansible-playbook -i deploy/ansible/hosts deploy/ansible/deploy-staging.yml",
+    "provision": "ansible-playbook -i deploy/ansible/hosts deploy/ansible/provision.yml",
+    "vagrant-watch-log": "vagrant ssh -c 'tail -f /var/log/api'",
+    "vagrant-unwatch-log": "pgrep -f 'tail -f /var/log/api' | xargs kill"
+  },
+  "author": "Bocoup",
+  "dependencies": {
+    "bookshelf": "^0.7.9",
+    "checkit": "^0.2.0-pre",
+    "endpoints-controller": "^0.3.0",
+    "endpoints-model": "^0.1.2",
+    "endpoints-router": "^0.2.1",
+    "express": "^4.10.1",
+    "express-bearer-token": "^2.0.0",
+    "express-routebuilder": "^1.0.0",
+    "express-session": "^1.9.1",
+    "knex": "^0.7.3",
+    "octonode": "^0.6.9",
+    "sqlite3": "^3.0.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "load-grunt-tasks": "^1.0.0",
+    "pg": "^3.6.2",
+    "hostile": "^1.0.0"
+  }
+}
