@@ -1,6 +1,6 @@
 const model = require('./model');
 const controller = require('./controller');
-const BaseRouter = require('endpoints-router');
+const BaseRouter = require('../../vendor/endpoints/router');
 
 module.exports = BaseRouter.extend({
   model: model,

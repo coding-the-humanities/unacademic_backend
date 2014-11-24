@@ -1,4 +1,4 @@
-const BaseModel = require('endpoints-model')({
+const BaseModel = require('../vendor/endpoints/model')({
   Bookshelf: require('./database'),
   Validator: require('./validator')
 });
