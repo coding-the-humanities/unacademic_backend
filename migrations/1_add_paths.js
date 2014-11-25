@@ -12,8 +12,8 @@ exports.up = function(knex, Promise) {
       t.text('version').notNullable();
       t.text('license');
       t.text('image_url');
-      t.text('asset_urls');
-      t.text('keywords');
+      t.specificType('asset_urls', 'text[]');
+      t.specificType('keywords', 'text[]');
       t.timestamp('created').notNullable().defaultTo(knex.raw('CURRENT_TIMESTAMP'));
     });
 };
