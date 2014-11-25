@@ -1,7 +1,6 @@
-# Unacademic_-Backend
-## Backend for the unacademic platform build on top of PIEP.io
+# Unacademic API
 
-`piep` is a package manager for educational materials related to teaching programming and computer science.  Creating good content for a class is the biggest bottleneck in developing good educational programs in these fields, partially because the content changes so quickly. `piep` aims to harness the power of the community to alleviate this bottleneck and produce relevant up-to-date open source content for teachers.
+The API for the unacademic platform. It is built on top of [piep](https://github.com/piep/piep).
 
 ## Installation
 
@@ -19,7 +18,7 @@ cd unacademic-backend && npm install
 
 ## Setting up the development environment
 
-There are two ways to develop Piep locally; within a Vagrantbox, or directly on your machine with
+There are two ways to develop locally; within a Vagrantbox, or directly on your machine with
 SQLite3. It is recommended that you use the Vagrant development environment.
 
 ### Setting up Vagrant
