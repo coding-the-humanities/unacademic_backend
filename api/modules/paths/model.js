@@ -15,6 +15,7 @@ var classProps = {
     'contributors',
     'name',
     'description',
+    'summary',
     'resources',
     'image_url',
     'asset_urls',

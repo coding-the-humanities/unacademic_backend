@@ -9,6 +9,7 @@ exports.up = function(knex, Promise) {
       t.specificType('collaborators', 'text[]');
       t.text('name').notNullable();
       t.text('description');
+      t.text('summary');
       t.text('version').notNullable();
       t.text('license');
       t.text('image_url');
