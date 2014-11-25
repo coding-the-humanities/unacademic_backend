@@ -3,7 +3,7 @@ const BaseModel = require('../../classes/base_model');
 var instanceProps = {
   tableName: 'paths',
   places: function(){
-    return this.hasMany(require('../places/model'));
+    return this.hasMany(require('../path-places/model'));
   }
 };
 

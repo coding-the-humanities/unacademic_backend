@@ -29,7 +29,7 @@ if (isProductionHost) {
   });
 }
 
-var modules = ["paths", "places", "resources", "objectives"];
+var modules = ["paths", "path-places"];
 
 modules.forEach(function (module){
   var routes = require('./modules/' + module + '/routes');
