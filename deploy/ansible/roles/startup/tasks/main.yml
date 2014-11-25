@@ -13,6 +13,7 @@
       - --include=seeds/***
       - --include=package.json
       - --include=index.js
+      - --include=knexfile.js
       - --exclude='.*'
       - --exclude='*'
       - --delete-before
