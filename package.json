@@ -20,6 +20,7 @@
   "dependencies": {
     "bookshelf": "^0.7.9",
     "checkit": "^0.2.0-pre",
+    "cors": "^2.5.2",
     "express": "^4.10.1",
     "express-bearer-token": "^2.0.0",
     "express-routebuilder": "^1.0.0",
