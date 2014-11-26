@@ -8,7 +8,7 @@ const isProductionHost = ['cth', 'cth-staging'].indexOf(hostname) !== -1;
 var app = express();
 var namespace = "/api/0/";
 
-app.use(require('./middleware/cors'));
+app.use(require('cors'));
 app.use(session({
   secret: 'piep piep piep',
   resave: true,
