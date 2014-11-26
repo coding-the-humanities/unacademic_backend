@@ -18,6 +18,7 @@
   },
   "author": "Bocoup",
   "dependencies": {
+    "body-parser": "^1.9.3",
     "bookshelf": "^0.7.9",
     "checkit": "^0.2.0-pre",
     "cors": "^2.5.2",
